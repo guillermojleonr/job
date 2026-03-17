@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillermo Leon - CV</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Marked.js (Markdown Parser) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- UI Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar / Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Guillermo Leon</h2>
+                <p>Data & BI Analyst</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <p class="nav-title">CURRÍCULUMS</p>
+                <button class="nav-btn active" onclick="loadCV('cv-espanol.md', this)">
+                    <i class="ph ph-file-text"></i> CV Español
+                </button>
+                <button class="nav-btn" onclick="loadCV('cv-english.md', this)">
+                    <i class="ph ph-file-text"></i> CV English
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="https://github.com" target="_blank" class="social-link"><i class="ph ph-github-logo"></i></a>
+                <a href="https://savingl.cl" target="_blank" class="social-link"><i class="ph ph-globe"></i></a>
+                <a href="mailto:guillermojleonr@gmail.com" class="social-link"><i class="ph ph-envelope-simple"></i></a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="top-bar">
+                <button class="mobile-toggle" onclick="toggleSidebar()"><i class="ph ph-list"></i></button>
+                <div class="theme-toggle">
+                    <button id="theme-btn" onclick="toggleTheme()" title="Cambiar tema">
+                        <i class="ph ph-moon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Loader -->
+            <div id="loader" class="loader-container">
+                <div class="spinner"></div>
+            </div>
+
+            <!-- Markdown Content Rendered Here -->
+            <div id="cv-content" class="markdown-body" style="display: none;"></div>
+        </main>
+    </div>
+
+    <script>
+        // Custom renderer para agregar clases de Tailwind/CSS a Marked
+        const renderer = new marked.Renderer();
+        
+        // Configurar Marked
+        marked.setOptions({
+            renderer: renderer,
+            gfm: true,
+            breaks: true
+        });
+
+        // Cargar archivo Markdown
+        async function loadCV(filename, btnElement) {
+            const loader = document.getElementById('loader');
+            const contentDiv = document.getElementById('cv-content');
+            
+            // Actualizar botones activos
+            if(btnElement) {
+                document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+                btnElement.classList.add('active');
+            }
+
+            // UI Feedback
+            contentDiv.style.display = 'none';
+            contentDiv.style.opacity = '0';
+            loader.style.display = 'flex';
+
+            try {
+                // Agregar un pequeño delay artificial para que la animación se note suave
+                await new Promise(r => setTimeout(r, 400));
+
+                const response = await fetch(filename);
+                if (!response.ok) throw new Error("Error loading file");
+                
+                const markdownText = await response.text();
+                contentDiv.innerHTML = marked.parse(markdownText);
+                
+                // Mostrar con fade-in
+                loader.style.display = 'none';
+                contentDiv.style.display = 'block';
+                // Trigger reflow
+                void contentDiv.offsetWidth; 
+                contentDiv.style.opacity = '1';
+
+                // En móvil, cerrar sidebar al clickear
+                if (window.innerWidth <= 768) {
+                    toggleSidebar(false);
+                }
+
+            } catch (error) {
+                console.error("Error al cargar el archivo:", error);
+                contentDiv.innerHTML = `
+                    <div class="error-msg">
+                        <i class="ph ph-warning-circle"></i>
+                        <h2>No se pudo cargar el CV</h2>
+                        <p>Asegúrate de ejecutar esto mediante un servidor local (ej. Live Server, npx serve) y no abriendo directamente el archivo HTML.</p>
+                    </div>`;
+                loader.style.display = 'none';
+                contentDiv.style.display = 'block';
+                contentDiv.style.opacity = '1';
+            }
+        }
+
+        // Toggle Sidebar en Móviles
+        function toggleSidebar(forceState) {
+            const sidebar = document.querySelector('.sidebar');
+            if(forceState === false) {
+                sidebar.classList.remove('open');
+            } else {
+                sidebar.classList.toggle('open');
+            }
+        }
+
+        // Dark/Light Theme functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeBtn = document.getElementById('theme-btn').querySelector('i');
+            
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                themeBtn.classList.remove('ph-sun');
+                themeBtn.classList.add('ph-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.add('dark-theme');
+                themeBtn.classList.remove('ph-moon');
+                themeBtn.classList.add('ph-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Cargar tema guardado
+        if(localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            const themeBtn = document.getElementById('theme-btn').querySelector('i');
+            themeBtn.classList.remove('ph-moon');
+            themeBtn.classList.add('ph-sun');
+        }
+
+        // Cargar CV inicial al abrir la página
+        window.onload = () => {
+            const defaultBtn = document.querySelector('.nav-btn.active');
+            loadCV('cv-espanol.md', defaultBtn);
+        };
+    </script>
+</body>
+</html>
