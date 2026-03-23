@@ -1,0 +1,184 @@
+# ==============================================================================
+# Security Focused .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Variables / Configuration / Config Dumps
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.local
+config.local.json
+settings.local.json
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# ------------------------------------------------------------------------------
+# 2. Key Files, Certificates, Keystores & SSH
+# ------------------------------------------------------------------------------
+*.pem
+*.pub
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.der
+*.keystore
+*.jks
+*.p8
+id_rsa
+id_dsa
+id_ed25519
+id_ecdsa
+*.cer
+
+# ------------------------------------------------------------------------------
+# 3. Cloud Provider & API Credentials
+# ------------------------------------------------------------------------------
+# AWS
+.aws/
+credentials.csv
+*.awsrc
+
+# Google Cloud
+*-compute@developer.gserviceaccount.com.json
+*.iam.gserviceaccount.com.json
+gcp-credentials.json
+client_secret.json
+
+# Azure
+azure.json
+
+# General auth
+credentials.json
+auth.json
+token.json
+oauth.json
+*.htpasswd
+
+# ------------------------------------------------------------------------------
+# 4. Databases and Dumps
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.s3db
+*.sl3
+*.mdf
+*.ldf
+*.rdb
+*.nsf
+*.ntf
+*.dump
+*.sql
+
+# ------------------------------------------------------------------------------
+# 5. Logs and History
+# ------------------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.seed
+*.log.*
+.bash_history
+.zsh_history
+.irb_history
+.python_history
+.node_repl_history
+
+# ------------------------------------------------------------------------------
+# 6. Temporary / Cache / Backup / OS Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+[Tt]humbs.db
+*.bak
+*.swp
+*~
+*.tmp
+*.temp
+
+# ------------------------------------------------------------------------------
+# 7. Coverage and Profiling Data
+# ------------------------------------------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.gcda
+*.gcno
+*.gcov
+.tox/
+
+# ------------------------------------------------------------------------------
+# 8. Dependencies / Virtual Environments (often contain tools/secrets)
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+bower_components/
+venv/
+.venv/
+env/
+.env-py/
+pip-wheel-metadata/
+vendor/
+.bundle/
+
+# ------------------------------------------------------------------------------
+# 9. IDE & Project Specific (sometimes contain access details)
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.project
+.settings/
+.classpath
+
+# ------------------------------------------------------------------------------
+# 10. Compiled Source / Build Artifacts
+# ------------------------------------------------------------------------------
+dist/
+build/
+out/
+bin/
+obj/
+*.class
+*.exe
+*.dll
+*.so
+*.dylib
+*.rpm
+*.deb
+*.apk
+*.ipa
+*.app
+
+# ==============================================================================
+# Security Exception Rules (Include safe examples)
+# ==============================================================================
+# !.env.example
+# !config.example.json
+
+# ==============================================================================
+# Other
+# ==============================================================================
+
+data/
