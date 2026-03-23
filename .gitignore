@@ -182,3 +182,12 @@ obj/
 # ==============================================================================
 
 data/
+
+#Python venv
+include/
+lib/
+scripts/
+pyvenv.cfg
+
+#Config
+pyrightconfig.json
