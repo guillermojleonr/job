@@ -8,7 +8,6 @@
 Professional with over 4 years of experience in the data field, performing tasks related to the roles of Data Analyst, Business Intelligence Analyst, or Data Engineer. I take action from requirement gathering to product delivery (end-to-end). In software, I handle development, infrastructure implementation, testing, and deployment. In analytics: modeling, visualization, and analysis.
 
 ---
-
 ## 🛠 Technical Knowledge
 
 - **Languages:** Python, SQL, Javascript, VBA/VBS
@@ -22,14 +21,10 @@ Professional with over 4 years of experience in the data field, performing tasks
 - **Spreadsheets:** Excel, Google Sheets
 - **Languages:** Spanish (Native), English
 
-## 🎓 Certificates
-- Relational Database Design
-
 ---
-
 ## 💼 Professional Experience
 
-### Data Analyst - Você
+### Data Analyst - [Você](https://tiendavoce.cl)
 *November 2024 - Present*
 
 Developed an end-to-end solution for data management and its practical application. Major milestones included: centralizing all company data, serving data to all teams and analysts, automating processes, and publishing 70% of the hidden catalog on marketplaces. Key features:
@@ -46,7 +41,7 @@ Developed an end-to-end solution for data management and its practical applicati
 - **Analytical Reporting:** BI reports to control sales, stock, margins, prices, discounts, etc. Key features: managing +45 tables, resolving inconsistencies, circular relationships, and dirty data. Implementation of KPIs, *what-if* scenarios, trend analysis, etc.
 - **Bulk Upload to Marketplaces and Other Systems:** The company lacked the capacity to upload tens of thousands of products with variants to marketplaces. By centralizing all the data, I created queries and workflows to upload products, prices, and stock to Falabella, Paris, Ripley, and MercadoLibre, increasing sales by several multiples year-over-year.
 
-### Business Intelligence Analyst - DITChile / Dinámico Dental / Ditdental
+### Business Intelligence Analyst - [DITChile](https://ditchile.com) / [Dinámico Dental](https://dinamicodental.com) / [Ditdental](https://ditdental.com)
 *November 2022 - July 2024*
 
 In addition to improving processes, a significant milestone was to consolidate data and create the necessary reporting and reports for the merger of one of our subsidiaries with another subsidiary of the Norden-Everest dental group. To achieve this, I developed ETLs, SQL queries, Power BI reporting, and VBA macros. Operationally, I automated collection processes, finance control, and claims management.
@@ -66,3 +61,7 @@ Analyst roles primarily using Excel and SQL.
 - **Administrative Analyst** - Industrial Contractor V60 *(Aug 2016 - Feb 2017)*
 - **Logistics Administrator** - Hospifarma Drugstore *(Aug 2012 - Mar 2016)*
 - **Pharmacy Assistant** - Hospifarma Pharmacy *(Aug 2010 - Aug 2012)*
+
+---
+## 🎓 Certificates
+- [Relational Database Design](https://www.udemy.com/certificate/UC-195b1464-be28-423b-8548-6f7a58a4978c/)

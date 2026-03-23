@@ -8,7 +8,6 @@
 Profesional con más de 4 años de experiencia en el área de data, desempeñando tareas relacionadas a los roles de Data Analyst, Business Intelligence Analyst o Data Engineer. Tomo acción desde el levantamiento del requerimiento hasta la entrega del producto (end-to-end). En software hago desarrollo, implementación e infraestructura, testing y despliegue. En analítica: modelado, visualización y análisis.
 
 ---
-
 ## 🛠 Conocimiento Técnico
 
 - **Lenguajes:** Python, SQL, Javascript, VBA/VBS
@@ -22,14 +21,10 @@ Profesional con más de 4 años de experiencia en el área de data, desempeñand
 - **Hojas de Cálculo:** Excel, Google Sheets
 - **Idiomas:** Español (Nativo), Inglés
 
-## 🎓 Certificados
-- Diseño de bases de datos relacionales
-
 ---
-
 ## 💼 Experiencia Profesional
 
-### Data Analyst - Você
+### Data Analyst - [Você](https://tiendavoce.cl)
 *Noviembre 2024 - Presente*
 
 Desarrollé una solución integral para la gestión de datos y su aplicación práctica. Hitos importantes fueron: centralizar todos los datos de la empresa, servir datos a todos los equipos y analistas, automatizar procesos y publicar en marketplaces el 70% del catálogo que estaba en las sombras. Algunas características importantes:
@@ -46,7 +41,7 @@ Desarrollé una solución integral para la gestión de datos y su aplicación pr
 - **Reportería Analítica:** Reportes de BI para control de ventas, stock, márgenes, precios, descuentos, etc. Algunas características: gestión de +45 tablas, resolviendo inconsistencias, relaciones circulares y datos sucios. Implementación de KPIs, escenarios *what-if*, análisis de tendencias, etc.
 - **Carga masiva en marketplaces y otros sistemas**: La empresa no tenía capacidad para cargar decenas de miles productos con variantes a marketplaces. Al contar con toda la data centralizada, creé consultas y flujos para cargar productos, precios, stock, hacia Falabella, Paris, Ripley y Mercadolibre, incrementando las ventas varios múltiplos en comparación año contra año.
 
-### Business Intelligence Analyst - DITChile / Dinámico Dental / Ditdental
+### Business Intelligence Analyst - [DITChile](https://ditchile.com) / [Dinámico Dental](https://dinamicodental.com) / [Ditdental](https://ditdental.com)
 *Noviembre 2022 - Julio 2024*
 
 Además de mejorar procesos, un hito relevante fue crear consolidar la data, elaborar reportería y informes necesarios para la fusión de una filial nuestra con otra filial del grupo odontológico Norden-Everest, para lograrlo desarrollé ETL, consultas SQL, reportería Power BI y macros VBA. En lo operativo automaticé procesos de cobranza, control de finanzas y gestión de reclamos.
@@ -66,3 +61,7 @@ Roles de analista empleando fundamentalmente Excel y SQL.
 - **Analista Administrativo** - Contratista Industrial V60 *(Ago 2016 - Feb 2017)*
 - **Administrador Logístico** - Droguería Hospifarma *(Ago 2012 - Mar 2016)*
 - **Auxiliar de Farmacia** - Farmacia Hospifarma *(Ago 2010 - Ago 2012)*
+
+
+## 🎓 Certificados
+- [Diseño de bases de datos relacionales](https://www.udemy.com/certificate/UC-195b1464-be28-423b-8548-6f7a58a4978c/)
