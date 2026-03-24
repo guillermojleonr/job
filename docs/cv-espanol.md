@@ -24,8 +24,8 @@ Profesional con más de 4 años de experiencia en el área de data, desempeñand
 ---
 ## 💼 Experiencia Profesional
 
-### Data Analyst - [Você](https://tiendavoce.cl)
-*Noviembre 2024 - Presente*
+### Analytics Engineer - [Você](https://tiendavoce.cl)
+*Noviembre 2024 - Marzo 2026*
 
 Desarrollé una solución integral para la gestión de datos y su aplicación práctica. Hitos importantes fueron: centralizar todos los datos de la empresa, servir datos a todos los equipos y analistas, automatizar procesos y publicar en marketplaces el 70% del catálogo que estaba en las sombras. Algunas características importantes:
 

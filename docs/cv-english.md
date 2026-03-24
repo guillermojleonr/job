@@ -24,8 +24,8 @@ Professional with over 4 years of experience in the data field, performing tasks
 ---
 ## 💼 Professional Experience
 
-### Data Analyst - [Você](https://tiendavoce.cl)
-*November 2024 - Present*
+### Analytics Engineer - [Você](https://tiendavoce.cl)
+*November 2024 - March 2026*
 
 Developed an end-to-end solution for data management and its practical application. Major milestones included: centralizing all company data, serving data to all teams and analysts, automating processes, and publishing 70% of the hidden catalog on marketplaces. Key features:
 
