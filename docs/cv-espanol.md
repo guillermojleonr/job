@@ -17,7 +17,7 @@ Profesional con más de 4 años de experiencia en el área de data, desempeñand
 - **Bases de Datos:** MySQL, PostgreSQL, MongoDB
 - **Herramientas de BD:** Dbeaver, MySQL Workbench
 - **Testing:** Unittest, Playwright
-- **Infraestructura Cloud (AWS):** EC2, RDS, S3, Rekognition, Bedrock, SES, IAM
+- **Infraestructura Cloud (AWS):** EC2, RDS, S3, Rekognition, Bedrock, SES, IAM, Lambda, DynamoDB
 - **Hojas de Cálculo:** Excel, Google Sheets
 - **Idiomas:** Español (Nativo), Inglés
 
