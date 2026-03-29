@@ -16,7 +16,7 @@ Profesional con más de 4 años de experiencia en el área de data, desempeñand
 - **Frameworks Web:** Django, FastAPI
 - **Bases de Datos:** MySQL, PostgreSQL, MongoDB
 - **Herramientas de BD:** Dbeaver, MySQL Workbench
-- **Testing:** Unittest, Playwright
+- **Testing:** Unittest, Pytest, Playwright
 - **Infraestructura Cloud (AWS):** EC2, RDS, S3, Rekognition, Bedrock, SES, IAM, Lambda, DynamoDB
 - **Hojas de Cálculo:** Excel, Google Sheets
 - **Idiomas:** Español (Nativo), Inglés

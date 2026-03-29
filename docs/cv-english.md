@@ -16,7 +16,7 @@ Professional with over 4 years of experience in the data field, performing tasks
 - **Web Frameworks:** Django, FastAPI
 - **Databases:** MySQL, PostgreSQL, MongoDB
 - **DB Tools:** Dbeaver, MySQL Workbench
-- **Testing:** Unittest, Playwright
+- **Testing:** Unittest, Pytest, Playwright
 - **Cloud Infrastructure (AWS):** EC2, RDS, S3, Rekognition, Bedrock, SES, IAM, Lambda, DynamoDB
 - **Spreadsheets:** Excel, Google Sheets
 - **Languages:** Spanish (Native), English
